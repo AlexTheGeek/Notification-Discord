@@ -1,7 +1,8 @@
 # Live-notification
 
-It's a program that notify you when a streamer is in live on your Discord Channel.
+# Description
+It's a program that notify you when a specefic streamer is in live on your Discord Channel.
 
 
-# Crédit
+# Credit
 Alexis Brunet : albrunet2000[at]gmail.com
