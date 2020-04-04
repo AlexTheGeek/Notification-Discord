@@ -1,19 +1,17 @@
 #!/usr/bin/env python3
-import datetime
 import json
 import time
 import requests
 import discord
 from discord import Webhook, RequestsWebhookAdapter, File
 
+# If you want put the VOD and the Live in two separate cahnnel, you need two webhooks on your server.
 WEBHOOK_ID_LIVE = ""
 WEBHOOK_TOKEN_LIVE = ""
 
 WEBHOOK_ID_VOD = ""
 WEBHOOK_TOKEN_VOD = ""
 
-# Upload image to server
-#webhook.send(file=discord.File("latest_img.jpg"))
 
 # global configuration
 client_id = ""  # don't change this
@@ -30,7 +28,7 @@ def check_user():
     # 1: offline,
     # 2: not found,
     # 3: error
-    url = 'https://api.twitch.tv/kraken/streams/' + username
+    url = 'https://api.twitch.tv/kraken/streams/'+username
     info = None
     status = 1
     try:
@@ -51,22 +49,22 @@ def check_user():
 while True:
     status = check_user()
     if status == 2:
-        print("Channel not found")
+        print(username+"est une chaine non trouvée")
         last_status = 2
         time.sleep(refresh)
     elif status == 3:
-        print(datetime.datetime.now().strftime("%Hh%Mm%Ss"), " ","Erreur, nous retentons dans 5 minutes.")
+        print("Erreur, nous retentons dans 5 minutes.")
         last_status = 3
         time.sleep(300)
     elif (status == 1) & (last_status != 1):
         print(username, "Hors ligne, vérification dans", refresh, "seconds.")
         webhook = Webhook.partial(WEBHOOK_ID_VOD, WEBHOOK_TOKEN_VOD, adapter=RequestsWebhookAdapter())
-        webhook.send("Le live est terminé, retrouvez les lives à : https://twitch.tv//videos")
+        webhook.send("Le live est terminé, retrouvez les lives sur : https://twitch.tv/"+username+"/videos")
         last_status = 1
         time.sleep(refresh)
     elif (status == 0) & (last_status != 0):
-        print(username, "Online")
+        print(username, "En ligne")
         last_status = 0
         webhook = Webhook.partial(WEBHOOK_ID_LIVE, WEBHOOK_TOKEN_LIVE,adapter=RequestsWebhookAdapter())
-        webhook.send("Live en cours : https://twitch.tv/")
+        webhook.send("Live en cours : https://twitch.tv/"+username)
         time.sleep(refresh)
