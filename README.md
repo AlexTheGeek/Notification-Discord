@@ -4,8 +4,8 @@ It's a program that notify you when a specefic streamer is online.
 It's going to send you a message on your Discord channel and turn on your Philips Hue lights in a specific color.  
 
 # Requirements:
-- Discord.py : fint the documentation [here](https://discordpy.readthedocs.io/en/latest/index.html) ```python3 -m pip install -U discord.py```
-- phue : find the [Github project](https://github.com/studioimaginaire/phue) ```sudo pip install phue```
+- Discord.py : fint the documentation [here](https://discordpy.readthedocs.io/en/latest/index.html). Installation commmand: ```python3 -m pip install -U discord.py```
+- phue : find the [Github project](https://github.com/studioimaginaire/phue). Installation command:  ```sudo pip install phue```
 
 # Fonctions
 ## Check_user:
