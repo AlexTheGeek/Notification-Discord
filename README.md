@@ -6,6 +6,7 @@ It's going to send you a message on your Discord channel and turn on your Philip
 # Requirements:
 - Discord.py : fint the documentation [here](https://discordpy.readthedocs.io/en/latest/index.html). Installation commmand: ```python3 -m pip install -U discord.py```
 - phue : find the [Github project](https://github.com/studioimaginaire/phue). Installation command:  ```sudo pip install phue```
+- you need to create a webhook on a channel of your Discord Server. When you are going to generate a new webhook your are going to have a url to call the webhook ressembling https://discordapp.com/api/webhooks/999999999999999999/XXXXXXXXXXXXXXXXXXXX. The part of 9 referes to the variable WEBHOOK_ID and the part of X referes to the variable WEBHOOK_TOKEN.
 
 # Fonctions
 ## Check_user:
