@@ -1,4 +1,4 @@
-# Live-notification
+# Twitch-Live-notification
 
 It's a program that notify you when a specefic streamer is online.  
 It's going to send you a message on your Discord channel and turn on your Philips Hue lights in a specific color.  
