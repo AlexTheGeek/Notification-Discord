@@ -27,4 +27,4 @@ In this project, we recover the title of the live and also the game.
 
 
 # Credit:
-Alexis Brunet : albrunet2000[at]gmail.com
+Alexis Brunet
