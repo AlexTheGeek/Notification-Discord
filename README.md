@@ -26,5 +26,5 @@ In this project, we recover the title of the live and also the game.
 ## Youtube
 
 
-# Credit:
+## Credit:
 Alexis Brunet
