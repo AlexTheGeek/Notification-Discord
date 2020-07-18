@@ -9,6 +9,7 @@ There are 2 script, the first one is to know when a streamer is online and the s
 ## Twitch
 It's a program that notify you when a specefic streamer is online.  
 It's going to send you a message on your Discord channel and turn on your Philips Hue lights in a specific color.  
+With the new api of Twitch we need to find the ID of the channel.
 
 ### Fonctions:
 #### Check_user:
@@ -24,7 +25,9 @@ This function allows you to retrieve the various information that you want to di
 In this project, we recover the title of the live and also the game.  
 
 ## Youtube
-
+This script send a notification, when a new video has been published on YouTube.  
+You need an API key from the [Google Console](https://console.developers.google.com/), add to the library of the API the YouTube Data API v3.  
+And the ID of the YouTuber, you find it in the channel url. (e.g. https://www.youtube.com/channel/UCgijyWr61vIBPN-9ILflszA, the id is UCgijyWr61vIBPN-9ILflszA)
 
 ## Credit:
 Alexis Brunet
