@@ -30,4 +30,4 @@ You need an API key from the [Google Console](https://console.developers.google.
 And the ID of the YouTuber, you find it in the channel url. (e.g. https://www.youtube.com/channel/UCgijyWr61vIBPN-9ILflszA, the id is UCgijyWr61vIBPN-9ILflszA)
 
 ## Credit:
-Alexis Brunet : alexbrcontact[at]gmail.com
+Alexis Brunet : contact[at]lapinfo[dot]ovh
