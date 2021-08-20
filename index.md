@@ -29,5 +29,6 @@ This script send a notification, when a new video has been published on YouTube.
 You need an API key from the [Google Console](https://console.developers.google.com/), add to the library of the API the YouTube Data API v3.  
 And the ID of the YouTuber, you find it in the channel url. (e.g. https://www.youtube.com/channel/UCgijyWr61vIBPN-9ILflszA, the id is UCgijyWr61vIBPN-9ILflszA)
 
-## Credit:
-Alexis Brunet : contact[at]lapinfo[dot]fr
+
+## Contact
+contact[at]lapinfo[dot]fr
