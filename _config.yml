@@ -2,7 +2,7 @@ title: Notification-discord
 description: Live and video notification from YouTube and Twitch on a Discord channel.
 google_analytics: 
 show_downloads: true
-theme: jekyll-theme-midnight
+theme: jekyll-theme-modernist
 
 gems:
   - jekyll-mentions
